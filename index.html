@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>StackOverflow Community</title>
+        <link rel="icon" href="./assets/favicon.ico" />
+
+    <!------ ICONSCOUT CDN ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/50f4a08ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!------ STYLESHEET ------>
+    <link rel="stylesheet" href="./static/community.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                StackOverFlow Community 
+            </h2>
+            <div class="profile">
+                <img src="./assets/icon.png" alt="">
+            </div>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search Stackoverflow agents and users">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>                
+            </div>
+        </div>
+    </nav>
+
+    <!------ MAIN ------>
+    <main>
+        <div class="container">
+            <!------ LEFT SIDE ------>
+            <div class="left">
+                <a class="profile">
+                    <div class="photo">
+                        <img src="./assets/icon.png">
+                    </div>
+                    <div class="handle">
+                        <h4>Stackoverflow Community</h4>
+                        <p class="text-muted">
+                            @stackoverflow
+                        </p>
+                    </div>
+                </a>
+                <!------ SIDE BAR ------>
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a> 
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                        <!------ NOTIFICATIONS POPUP ------>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/profile1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Neetu Singh</b> Joined Stackoverflow Community 
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/profile2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ritzz</b> Joined Stackoverflow Community 
+                                    <small class="text-muted">1 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/profile3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Naveen</b> Joined Stackoverflow Community 
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/profile5.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Raksh</b> Joined Stackoverflow Community
+                                    <small class="text-muted">2 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/profile6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nitya</b> Joined Stackoverflow Community 
+                                    <small class="text-muted">1 weeks ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!------ NOTIFICATIONS POPUP ENDS ------>
+                    </a> 
+                    <a class="menu-item" id="messages-notification">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-analytics"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                    </a>
+                </div>
+                <!------ ENDS SIDE BAR ------>
+                <label for="create-post" class="btn btn-primary" >Create Post</label>
+            </div>
+            <!------ LEFT SIDE ENDS ------>
+
+            <!------ MIDDLE SIDE ------>
+            <div class="middle">
+                <!------ STACKOVERFLOW IMG ------>
+                <div class="stackoverflow">
+                    <div class="stackoverflow-img">
+                        <img src="./assets/stackoverflowimg.png" >
+                    </div>  
+                    <div class="community">
+                       <h2><span>Stackoverflow Community</span></h2>
+                       <p>Communities for your favorite technologies</p>
+                    </div>       
+                </div>
+                <!------ STACKOVERFLOW IMG ENDS ------>
+
+                <!------ CREATE POST ------>
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./assets/profile6.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind..." id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form> 
+                <!------ CREATE POST ENDS ------>
+
+                <!------ FEEDS ------>
+                <div class="feeds">
+                <!------ FEED 1 ------>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="./assets/profile7.png">                                    
+                            </div>
+                            <div class="ingo">
+                                <h3>New Post</h3>
+                                <small>India, Just Now</small>                                    
+                            </div>                                
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>     
+                    </div>
+                    <div class="center">
+                        <div class="form-input">
+                            <div class="preview">
+                                <img id="file-ip-1-preview">
+                            </div>
+                            <label for="file-ip-1">Create Post</label>
+                            <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">                              
+                        </div>                            
+                    </div> 
+                    <div class="action-button">  
+                        <div class="interaction-buttons">
+                            <span><i class="far fa-heart js-heart heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                        <div class="container">  
+                            <span class="share-btn"><i class="uil uil-share-alt"></i></span>   
+                            <div class="share-options">
+                                <p class="title">Share</p>
+                                    <div class="social-media">
+                                        <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.whatsapp.com/';"><i class="fab fa-whatsapp"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.instagram.com/';"><i class="fab fa-instagram"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fab fa-facebook-f"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://in.linkedin.com/';"><i class="fab fa-linkedin-in"></i></button>
+                                    </div>
+                                    <div class="link-container">
+                                        <p class="link">https://stackoverflow.com/</p>
+                                        <button class="copy-btn" onclick="copyText()">Copy</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="./assets/profile1.jpg"></span>
+                        <span><img src="./assets/profile4.jpg"></span>
+                        <span><img src="./assets/profile1.jpg"></span>
+                        <p>Liked By <b>Neetu Singh<b> and 210 others</b></p>
+                    </div>
+                </div>
+            <!------- FEED 1 ENDS ------>
+
+            <!------- FEED 2 ------>
+            <div class="feed">
+                <div class="head">
+                    <div class="user">
+                        <div class="profile-photo">
+                            <img src="./assets/profile1.jpg">
+                        </div>
+                        <div class="ingo">
+                            <h3>Neetu Singh </h3>
+                            <small>India, 15 sec ago</small>                                    
+                        </div>  
+                    </div>
+                    <span class="edit">
+                        <i class="uil uil-ellipsis-h"></i>
+                    </span>
+                </div>
+                <div class="photo">
+                    <img src="./assets/prfeed3.jpg" style="height: 20rem;">
+                </div>
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span><i class="far fa-heart js-heart heart"></i></span>
+                        <span><i class="uil uil-comment"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark-full"></i></span>
+                    </div>
+                    <div class="container">
+                         <span class="share-btn"><i class="uil uil-share-alt"></i></span>
+                        <div class="share-options">
+                            <p class="title">Share</p>
+                                    <div class="social-media">
+                                        <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.whatsapp.com/';"><i class="fab fa-whatsapp"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.instagram.com/';"><i class="fab fa-instagram"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fab fa-facebook-f"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://in.linkedin.com/';"><i class="fab fa-linkedin-in"></i></button>
+                                    </div>
+                                    <div class="link-container">
+                                        <p class="link">https://stackoverflow.com/</p>
+                                        <button class="copy-btn" onclick="copyText()">Copy</button>
+                                    </div>
+                         </div>
+                    </div>    
+                </div>
+                <div class="liked-by">
+                    <span><img src="./assets/profile3.jpg"></span>
+                    <span><img src="./assets/profile2.jpg"></span>
+                    <span><img src="./assets/profile4.jpg"></span>
+                    <p>Liked By <b>Ritzz</b> and 322 others</b></p>
+                </div> 
+                <div class="caption">
+                    <p><b>Neetu Singh</b> Why do programmers prefer dark mode? <span style="font-weight: bold;">#sneak-peek</span></p>
+                </div> 
+                <div class="comment text-muted">View all 70 comments</div>
+            </div>
+            <!------- FEED 2 ENDS ------>
+
+            <!------- FEED 3 ------>
+            <div class="feed">
+                <div class="head">
+                    <div class="user">
+                        <div class="profile-photo">
+                            <img src="./assets/profile3.jpg">
+                        </div>
+                        <div class="ingo">
+                            <h3>Naveen </h3>
+                            <small>India, 2 hrs ago</small>                                    
+                        </div>  
+                    </div>
+                    <span class="edit">
+                        <i class="uil uil-ellipsis-h"></i>
+                    </span>
+                </div>
+                <div class="photo">
+                    <img src="./assets/prfeed4.jpg" style="height: 20rem;">
+                </div>
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span><i class="far fa-heart js-heart heart" id="like-button"></i></span>
+                        <span><i class="uil uil-comment"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark-full"></i></span>
+                    </div>
+                    <div class="container">
+                         <span class="share-btn"><i class="uil uil-share-alt"></i></span>
+                        <div class="share-options">
+                            <p class="title">Share</p>
+                                    <div class="social-media">
+                                        <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.whatsapp.com/';"><i class="fab fa-whatsapp"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.instagram.com/';"><i class="fab fa-instagram"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fab fa-facebook-f"></i></button>
+                                        <button class="social-media-btn" onclick="window.location.href = 'https://in.linkedin.com/';"><i class="fab fa-linkedin-in"></i></button>
+                                    </div>
+                                    <div class="link-container">
+                                        <p class="link">https://stackoverflow.com/</p>
+                                        <button class="copy-btn" onclick="copyText()">Copy</button>
+                                    </div>
+                         </div>
+                    </div>    
+                </div>
+                <div class="liked-by">
+                    <span><img src="./assets/profile4.jpg"></span>
+                    <span><img src="./assets/profile7.png"></span>
+                    <span><img src="./assets/profile8.jpg"></span>
+                    <p>Liked By <b>Prii</b> and 111 others</b></p>
+                </div> 
+                <div class="caption">
+                    <p><b>Naveen</b> He's not hooman..<span style="font-weight: bold;">#NotRobot</span></p>
+                </div> 
+                <div class="comment text-muted">View all 68 comments</div>
+            </div>
+            <!------- FEED 3 ENDS ------>
+        </div>
+        <!------ FEEDS END ------>
+    </div>
+        <!------ MIDDLE SIDE ENDS ------>
+
+        <!------ RIGHT SIDE ------>
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4><i class="uil uil-edit"></i>
+                </div>
+                <!------ SEARCH BAR ------>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search Messages" id="message-search">
+                </div>
+                <!------ MESSAGES CATEGORY ------>
+                <div class="category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-requests">Requests(9)</h6>
+                </div>
+                <!------MESSAGE 1 ------->
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="./assets/profile2.jpg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Ritzz</h5>
+                        <p class="text-muted">Really?did he..</p>
+                    </div>
+                </div>
+                <!------MESSAGE 1 ENDS ------->
+                <!------MESSAGE 2 ------->
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="./assets/profile4.jpg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Prii</h5>
+                        <p class="text-muted">duh..nahh i don't want that! </p>
+                    </div>
+                </div>
+                <!------MESSAGE 2 ENDS ------>
+                <!------ MESSAGE 3 ------>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="./assets/profile3.jpg">
+                    </div>
+                    <div class="message-body">
+                        <h5>Naveen</h5>
+                        <p class="text-muted">Yes..i'll come ,what about you</p>
+                    </div>
+                </div>
+                <!------ MESSAGE 3 ENDS ------>
+                <!------ MESSAGE 4 ------>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="./assets/profile6.jpg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Nitya</h5>
+                        <p class="text-muted">Okii-dokii..byyebyee</p>
+                    </div>
+                </div>
+                <!------ MESSAGE 4 ENDS ------>
+                <!------ MESSAGE 5 ------>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="./assets/profile5.png">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Raksh</h5>
+                        <p class="text-muted">Sure..wait for that</p>
+                    </div>
+                </div>
+                <!------ MESSAGE 5 ENDS ------>
+                <!------ MESSAGES CATEGORY ENDS ------>
+            </div>
+            <!------ FREIND REQUETS ------>
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./assets/profile8.jpg">
+                        </div>
+                        <div>
+                            <h5>Namya</h5>
+                            <p class="text-muted">
+                                8 mutual friends
+                            </p>                                
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="follow-button followed">
+                            Unfollow
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./assets/profile10.jpg">
+                        </div>
+                        <div>
+                            <h5>Rishank </h5>
+                            <p class="text-muted">
+                                1 mutual friends
+                            </p>                                
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="follow-button">
+                            Follow
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./assets/profile11.jpg">
+                        </div>
+                        <div>
+                            <h5>Disha</h5>
+                            <p class="text-muted">
+                                2 mutual friends
+                            </p>                                
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="follow-button">
+                            Follow
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./assets/profile13.jpg">
+                        </div>
+                        <div>
+                            <h5>Kikii</h5>
+                            <p class="text-muted">
+                                0 mutual friends
+                            </p>                                
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="follow-button followed">
+                            Unfollow
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./assets/profile12.jpg">
+                        </div>
+                        <div>
+                            <h5>Aliyana</h5>
+                            <p class="text-muted">
+                                11 mutual friends
+                            </p>                                
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="follow-button followed">
+                            Unfollow
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>
+                </div>
+                <!------ REQUEST ENDS ------>
+            </div>
+        </div>
+        <!------ RIGHT SIDE ENDS ------>
+        </div>
+    </main>
+
+    <!-- SCRIPT  -->
+    <script src="./static/community.js"></script>
+</body>
+</html>
